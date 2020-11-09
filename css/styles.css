@@ -27,6 +27,7 @@ html,body{
   position: relative;
   height: 350px;
   margin-top: 100px;
+  margin-bottom: 40px;
   position: relative;
   color: white;
   background-color: #2f2f2b;
@@ -73,9 +74,77 @@ html,body{
   height: 260px;
   width: 260px;
   position: absolute;
-  right: 3px;
-  top: 240px;
+  right: -3px;
+  top: 265px;
   border-radius: 50%;
+}
+
+#skills-jumb{
+  margin-bottom: 90px;
+  background-image: url("https://cdn.pixabay.com/photo/2015/07/28/21/58/student-865073__340.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center ;
+  background-color: transparent;
+  color: white;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+#proj-jumb{
+  margin-top: 90px;
+  margin-bottom: 90px;
+  background-image: url("https://cdn.pixabay.com/photo/2016/12/02/02/10/idea-1876659__340.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center ;
+  background-color: transparent;
+  color: black;
+  box-shadow: 5px 10px 18px #888888;
+  opacity: .8;
+}
+
+#cp-jumb{
+  margin-top: 90px;
+  margin-bottom: 90px;
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/23/14/45/coding-1853305__340.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center ;
+  background-color: transparent;
+  color: black;
+  box-shadow: 5px 10px 18px #888888;
+  opacity: .8;
+}
+
+#contact-jumb{
+  margin-top: 90px;
+  margin-bottom: 90px;
+  background-image: url("https://cdn.pixabay.com/photo/2015/01/11/02/15/mailbox-595854__340.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center ;
+  background-color: transparent;
+  color: black;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.img-contact{
+  height: 200px;
+  justify-content: center;
+}
+
+.card{
+  padding: 10px;
+  margin-left: 60px;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.card-img-top{
+  height: 280px;
+  width: 250px;
 }
 
 .page-footer {
@@ -219,7 +288,7 @@ a{
   }
 }
 
-@media (min-width: 900px) and (max-width: 981px) {
+@media (max-width: 900px) {
 
   #heading{
     padding-left: 0px;
@@ -237,12 +306,99 @@ a{
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 700px) {
+
+  .bg{
+    padding-left: 20px;
+  }
+
+  .bg:after{
+    width: 270px;
+    height: 270px;
+  }
+
+  #welcome-text{
+    font-size: 1.5em;
+  }
+
+  #cont-text{
+    font-size: .9em;
+  }
+
+  #skills-jumb{
+    background-size: cover; 
+  }
+
+  #img{
+    height: 200px;
+    width: 200px;
+    top: 335px;
+    right: -10px;
+  }
+
+  .button-cont{
+    position: relative;
+    left: 40px;
+    bottom: -30px;
+  }
+
+  .buttons{
+    margin-bottom: 5px;
+  }
+}
+}
+
+@media (min-width: 701) and (max-width: 1000px) {
+
+  .bg{
+    padding-left: 20px;
+  }
+
+  .bg:after{
+    width: 270px;
+    height: 270px;
+  }
+
+  #welcome-text{
+    font-size: 1.5em;
+  }
+
+  #cont-text{
+    font-size: .9em;
+  }
+
+  #skills-jumb{
+    background-size: cover; 
+  }
+
+  #img{
+    height: 200px;
+    width: 200px;
+    top: 335px;
+    right: -10px;
+  }
+
+  .button-cont{
+    position: relative;
+    left: 40px;
+    bottom: -20px;
+  }
+
+  .buttons{
+    margin-bottom: 5px;
+  }
+}
+}
+
+@media (max-width: 10px) and (max-width: 560px) {
 
   #heading{
     padding-left: 0px;
     font-size: 1.3em;
   }
 
-  
+  #skills-jumb{
+    background-size: cover; 
+  }
+}
 }
