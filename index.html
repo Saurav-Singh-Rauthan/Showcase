@@ -2,24 +2,27 @@
 <html>
 <head>
 	<title>Saurav @ Portfolio</title>
+	
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
 	<!-- CSS -->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-	
-	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-	<!-- jQuery and JS bundle w/ Popper.js -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
+	<!--fonts-->
 	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+	<!-- jQuery and JS bundle w/ Popper.js -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="250">
 	
 	<div id="main-cont">
 		<!--navbar starts -->
@@ -33,17 +36,17 @@
 		  </button>
 		  <div class="collapse navbar-collapse" id="navbarNav">
 		    <ul class="navbar-nav ml-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="#">About</a>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#about">About</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Skills</a>
+		        <a class="nav-link" href="#skills-jumb">Skills</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Projects</a>
+		        <a class="nav-link" href="#proj-jumb">Projects</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#footer-git">Contact</a>
+		        <a class="nav-link" href="#contact-jumb">Contact</a>
 		      </li>
 		    </ul>
 		  </div>
@@ -53,7 +56,7 @@
 
 	<div class="container-fluid">
 		<!-- welcome text-->
-		<div class="bg">
+		<div class="bg" id="about" data-aos="fade-up" data-aos-duration="10000">
 			<span id="welcome-text">
 				Hey There! 👋, I am Saurav Singh Rauthan
 			</span>
@@ -64,17 +67,16 @@
 			</p>
 			<div class="button-cont">
 				<a href="" class="buttons">RESUME</a>
-				<a href="" class="buttons">PORTFOLIO</a>
+				<a href="#skills-jumb" class="buttons">PORTFOLIO</a>
 			</div>
 		</div>
 
 		<!-- my image -->
 		<div>
-			<img src="images/saurav (2).jpg" class="img-fluid" id="img">
+			<img src="images/saurav (2).jpg" class="img-fluid" data-aos="fade-up" id="img">
 		</div>
 		
 		<!--Skills section starts-->
-
 		<div class="jumbotron jumbotron-fluid" id="skills-jumb">
 		  <div class="container">
 		    <h1 class="display-4">Skills</h1>
@@ -83,44 +85,43 @@
 		</div>
 
 		<!--Skills card-->
-		<div class="row">
-			
-				<div class="card col-lg-3 col-md-4 col-sm-6 col-7" style="width: 18rem;">
+		<div class="row mt-5 justify-content-center">			
+				<div data-aos="zoom-out-right"  class="card col-lg-3 col-md-5 col-sm-6 col-7 mx-2 mb-3" style="width: 18rem;">
 				  <img src="images/html.png" class="card-img-top" alt="...">
 				  <div class="card-body">
 				    <h5 class="card-title">HTML</h5>
 				  </div>
 				</div>	
 
-				<div class="card col-lg-3 col-md-4 col-sm-6 col-7" style="width: 18rem;">
+				<div data-aos="zoom-out-down" class="card col-lg-3 col-md-5 col-sm-6 col-7 mx-2 mb-3" style="width: 18rem;">
 				  <img src="images/css.png" class="card-img-top" alt="...">
 				  <div class="card-body">
 				    <h5 class="card-title">CSS</h5>
 				  </div>
 				</div>	
 
-				<div class="card col-lg-3 col-md-4 col-sm-6 col-7" style="width: 18rem;">
+				<div data-aos="zoom-out-left" class="card col-lg-3 col-md-5 col-sm-6 col-7 mx-2 mb-3" style="width: 18rem;">
 				  <img src="images/js.png" class="card-img-top" alt="...">
 				  <div class="card-body">
 				    <h5 class="card-title">JAVASCRIPT</h5>
 				  </div>
 				</div>	
 
-				<div class="card col-lg-3 col-md-4 col-sm-6 col-7" style="width: 18rem;">
+				<div data-aos="zoom-out-right" class="card col-lg-3 col-md-5 col-sm-6 col-7 mx-2 mb-3" style="width: 18rem;">
 				  <img src="images/bs.png" class="card-img-top" alt="...">
 				  <div class="card-body">
 				    <h5 class="card-title">BOOTSTRAP</h5>
 				  </div>
 				</div>	
 			
-				<div class="card col-lg-3 col-md-4 col-sm-6 col-7" style="width: 18rem;">
+				<div data-aos="zoom-out-top" class="card col-lg-3 col-md-5 col-sm-6 col-7 mx-2 mb-3" style="width: 18rem;">
 				  <img src="images/py.jfif" class="card-img-top" alt="...">
 				  <div class="card-body">
 				    <h5 class="card-title">PYTHON</h5>
 				  </div>
 				</div>	
 			
-				<div class="card col-lg-3 col-md-4 col-sm-6 col-7" style="width: 18rem;">
+				<div data-aos="zoom-out-left" class="card col-lg-3 col-md-5 col-sm-6 col-7 mx-2 mb-3" style="width: 18rem;">
 				  <img src="images/cpp.png" class="card-img-top" alt="...">
 				  <div class="card-body">
 				    <h5 class="card-title">C++</h5>
@@ -133,34 +134,39 @@
 
 		<!--Projects section starts-->
 
-		<div class="jumbotron jumbotron-fluid" id="proj-jumb">
-		  <div class="container">
+		<div class="jumbotron jumbotron-fluid" id="proj-jumb" data-aos="flip-up" data-aos-delay="200">
+		  <div class="container" >
 		    <h1 class="display-4">Projects</h1>
 		    <p class="lead">Here are some of the project made by me.</p>
 		  </div>
 		</div>
 
 		<!--Projects card-->
-		<div class="row">
-			
-				<div class="card col-lg-3 col-md-4 col-sm-6 col-7" style="width: 18rem;">
-				  <img src="images/html.png" class="card-img-top" alt="...">
+		<div class="row mt-5 justify-content-center">
+				<div class="card col-lg-3 col-md-6 col-sm-6 col-7 mx-2 mb-3" data-aos="zoom-out-left" style="width: 18rem;">
+				  <img src="images/tb.png" class="card-img-top" alt="...">
 				  <div class="card-body">
-				    <h5 class="card-title">HTML</h5>
+				    <h5 class="card-title">Tech Board Website</h5>
+				    <p class="card-text"> HTML || CSS || JS || BOOTSTRAP</p>
+    				<a href="https://saurav-singh-rauthan.github.io/tbRep/" target="_blank" class="btn btn-dark">View Source</a>
 				  </div>
 				</div>	
 
-				<div class="card col-lg-3 col-md-4 col-sm-6 col-7" style="width: 18rem;">
-				  <img src="images/css.png" class="card-img-top" alt="...">
+				<div class="card col-lg-3 col-md-6 col-sm-6 col-7 mx-2 mb-3" data-aos="zoom-out-left" style="width: 18rem;">
+				  <img src="images/hm.png" class="card-img-top" alt="...">
 				  <div class="card-body">
-				    <h5 class="card-title">CSS</h5>
+				    <h5 class="card-title">Hangman Game</h5>
+				    <p class="card-text"> PYTHON</p>
+    				<a href="https://github.com/Saurav-Singh-Rauthan/projects/blob/master/hangmanGame.txt" target="_blank" class="btn btn-dark">View Source</a>
 				  </div>
 				</div>	
 
-				<div class="card col-lg-3 col-md-4 col-sm-6 col-7" style="width: 18rem;">
-				  <img src="images/js.png" class="card-img-top" alt="...">
+				<div class="card col-lg-3 col-md-6 col-sm-6 col-7 mx-2 mb-3" data-aos="zoom-out-left" style="width: 18rem;">
+				  <img src="images/captures.jpg" class="card-img-top" alt="...">
 				  <div class="card-body">
-				    <h5 class="card-title">JAVASCRIPT</h5>
+				    <h5 class="card-title">Captures</h5>
+				    <p class="card-text">HTML || CSS || BOOTSTRAP</p>
+    				<a href="https://github.com/Saurav-Singh-Rauthan/Captures"  target="_blank" class="btn btn-dark">View Source</a>
 				  </div>
 				</div>	
 			
@@ -170,7 +176,7 @@
 
 		<!--CP section starts-->
 
-		<div class="jumbotron jumbotron-fluid" id="cp-jumb">
+		<div class="jumbotron jumbotron-fluid" id="cp-jumb" data-aos="flip-down" data-aos-delay="200">
 		  <div class="container">
 		    <h1 class="display-4">Competetive Programming</h1>
 		    <p class="lead">My Competetive Programming profiles.</p>
@@ -178,26 +184,29 @@
 		</div>
 
 		<!--CP card-->
-		<div class="row">
+		<div class="row mt-5 justify-content-center">
 			
-				<div class="card col-lg-3 col-md-4 col-sm-6 col-7" style="width: 18rem;">
-				  <img src="images/html.png" class="card-img-top" alt="...">
+				<div class="card col-lg-3 col-md-6 col-sm-6 col-7 mx-2 mb-3" data-aos="zoom-out-right" data-aos-delay="100" style="width: 18rem;">
+				  <img src="images/hkr.png" class="card-img-top" alt="...">
 				  <div class="card-body">
-				    <h5 class="card-title">HTML</h5>
+				    <h5 class="card-title">HACKERRANK</h5>
+				    <a href="https://www.hackerrank.com/im_booted"  target="_blank"class="btn btn-dark">Visit</a>
 				  </div>
 				</div>	
 
-				<div class="card col-lg-3 col-md-4 col-sm-6 col-7" style="width: 18rem;">
-				  <img src="images/css.png" class="card-img-top" alt="...">
+				<div class="card col-lg-3 col-md-6 col-sm-6 col-7 mx-2 mb-3" data-aos="zoom-out-right" data-aos-delay="100" style="width: 18rem;">
+				  <img src="images/cch.png" class="card-img-top" alt="...">
 				  <div class="card-body">
-				    <h5 class="card-title">CSS</h5>
+				    <h5 class="card-title">CODECHEF</h5>
+				    <a href="https://www.codechef.com/users/im_booted"  target="_blank"class="btn btn-dark">Visit</a>
 				  </div>
 				</div>	
 
-				<div class="card col-lg-3 col-md-4 col-sm-6 col-7" style="width: 18rem;">
-				  <img src="images/js.png" class="card-img-top" alt="...">
+				<div class="card col-lg-3 col-md-6 col-sm-6 col-7 mx-2 mb-3" data-aos="zoom-out-right" data-aos-delay="100" style="width: 18rem;">
+				  <img src="images/cf.png" class="card-img-top" alt="...">
 				  <div class="card-body">
-				    <h5 class="card-title">JAVASCRIPT</h5>
+				    <h5 class="card-title">CODEFORCES</h5>
+				    <a href="https://codeforces.com/profile/im_booted"  target="_blank"class="btn btn-dark">Visit</a>
 				  </div>
 				</div>	
 			
@@ -206,7 +215,7 @@
 
 		<!--Contact section starts-->
 
-		<div class="jumbotron jumbotron-fluid" id="contact-jumb">
+		<div class="jumbotron jumbotron-fluid" id="contact-jumb" data-aos="flip-up" data-aos-delay="200">
 		  <div class="container">
 		    <h1 class="display-4">Contact Me</h1>
 		  </div>
@@ -214,78 +223,75 @@
 
 		<!--Contact div-->
 		<div class="row">
-			<div class="col-3 col-sm-3 col-md-3 col-lg-3">
-				<a href="#">
-					<img class="img-contact" src="images/linkedin.png">
-				</a>
-			</div>
-			<div class="col-3 col-sm-3 col-md-3 col-lg-3">
-				<a href="#">
-					<img class="img-contact" src="images/fb.png">
-				</a>
-			</div>
-			<div class="col-3 col-sm-3 col-md-3 col-lg-3">
-				<a href="#">
-					<img class="img-contact" src="images/ig.jfif">
-				</a>
-			</div>
-			<div class="col-3 col-sm-3 col-md-3 col-lg-3">
-				<a href="#">
-					<img class="img-contact" src="images/mail.png">
-				</a>
-			</div>			
+				<div class="card contact-card col-lg-3 col-md-3 col-sm-3 col-3" data-aos="zoom-out-up" 
+				data-aos-delay="200" style="width: 18rem;">
+					<a href="https://www.facebook.com/saurav.singhrauthan.1" target="_blank">
+						<img src="images/facebook.svg" class="card-img-top card-img-top1" alt="...">	
+					</a>
+				</div>	
+
+				<div class="card contact-card col-lg-3 col-md-3 col-sm-3 col-3" data-aos="zoom-out-up" data-aos-delay="300" style="width: 18rem;">
+				  <a href="https://www.instagram.com/saurav_singh_rauthan17/" target="_blank">
+				  	<img src="images/instagram.svg" class="card-img-top card-img-top1" alt="...">	
+				  </a>
+				</div>	
+
+				<div class="card contact-card col-lg-3 col-md-3 col-sm-3 col-3" data-aos="zoom-out-up" data-aos-delay="400" style="width: 18rem;">
+				  <a href="https://www.linkedin.com/in/saurav-singh-rauthan-87141918b/" target="_blank">
+				  	<img src="images/linkedin.svg" class="card-img-top card-img-top1" alt="...">
+				  </a>
+				</div>
+
+				<div class="card contact-card col-lg-3 col-md-3 col-sm-3 col-3" data-aos="zoom-out-up" data-aos-delay="500" style="width: 18rem;">
+					<a href="https://github.com/Saurav-Singh-Rauthan" target="_blank">
+						<img src="images/github.svg" class="card-img-top card-img-top1" alt="...">		
+					</a>
+				</div>
 		</div>
 		<!--Contact section ends-->
 
 	</div>
-	<br><br><br><br>
 
 	<!-- Footer starts-->
 	<footer class="page-footer font-small  pt-4 fixed">
 	  <div class="container-fluid text-center text-md-left">
 	    <div class="row">
-	      <div class="col-12 col-md-3 col-sm-12 col-xs-12 mb-md-0 mb-3" id="footer-links">
+	      <div class="col-12 col-md-4 col-sm-12 col-xs-12 mb-md-0 mb-3" id="footer-links">
 	        <h5 class="text-uppercase" style="padding-bottom: 5px">Quick Links</h5>
 	         <ul class="list-unstyled">
 	          <li>
 	            <a href="#" class="active links">Home</a>
 	          </li>
 	          <li>
-	            <a href="#" class="links">Hackathons</a>
+	            <a href="#skills-jumb" class="links">Skills</a>
 	          </li>
 	          <li>
-	            <a href="#" class="links">Webinars</a>
-	          </li>
-	          <li>
-	            <a href="#" class="links">Contact Us</a>
+	            <a href="#proj-jumb" class="links">Projects</a>
 	          </li>
 	        </ul>
 	        <hr style="color: black" width="70%" class="hidden-sm">
 	      </div>
 
-	      <div class="col-12 col-md-3 col-sm-12 col-xs-12 mb-md-0 mb-3" id="footer-git">
+	      <div class="col-12 col-md-4 col-sm-12 col-xs-12 mb-md-0 mb-3" id="footer-git">
 	        <h5 class="text-uppercase" style="padding-bottom: 10px">Get in Touch</h5>
 	        <ul class="list-unstyled">
 	          <li>
-	            <span class="fa fa-map-marker"></span>
-	            <a href="https://goo.gl/maps/1MGwY2hPMLLAcytd7" target="_blank" class="links">AIT Pune</a>
-	          </li>
-	          <li>
 	          	<span class="fa fa-phone"></span>
-	            <a href="tel:6377 173 879" class="links">Call Us</a>
+	            <a href="tel:9765104380" class="links">Call Me</a>
 	          </li>
 	          <li>
 	          	<i class="fa fa-envelope"></i>
-	            <a href="mailto:aittechboard2020@gmail.com" class="links">Mail Us</a>
+	            <a href="mailto:sauravsinghrauthan@gmail.com" class="links">Mail Me</a>
 	          </li>
 	        </ul>
 	        <hr style="color: black" width="70%" class="hidden-md">
 	      </div>
 
-	      <div class="col-12 col-md-3 col-sm-12 col-xs-12 mt-md-0 mt-3" id="footer-about">
-	      	  <h4>About us</h4>
-	      	  <p>
-                  Engineering and technical board wants to deliver information regarding every happening in the gallery of engineering world that is competitions, seminars and conferences taking place through the platform.
+	      <div class="col-12 col-md-4 col-sm-12 col-xs-12 mt-md-0 mt-3" id="footer-about">
+	      	  <h4>About</h4>
+	      	  <p style="padding-top: 20px">
+                  This is a website made by me. A portfolio to show my skills and projects made by me.
+
               </p>
 	      </div>
 
@@ -297,8 +303,10 @@
 	</footer>
 	<!-- Footer ends -->
 	</div>
-		
-
 </body>
-	<script type="text/javascript" src="js/build-table.js"></script>
+<script type="text/javascript">
+	AOS.init({
+		duration :1200,
+	})
+</script>
 </html>
